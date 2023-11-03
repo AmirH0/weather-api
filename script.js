@@ -44,4 +44,7 @@ function weatherPic(waeterName) {
     } else if(waeterName == "Rainy"){
         weatherImage.src = "./images/weather-icon-png-11101.png"
     }
+    else{
+        weatherImage.src = "./images/weather-icon-png-11101.png"
+    }
 }
