@@ -1,4 +1,5 @@
 
+const wind = document.querySelector('.wind');
 const temp = document.querySelector('.temp');
 const city = document.querySelector('.city');
 const search_btn = document.querySelector('.search-btn');
@@ -17,6 +18,7 @@ async function checkWeather(cityName) {
 
         city.innerHTML = data.name;
         temp.innerHTML = data.main.temp + " °c "
+        wind.innerHTML = data.wind.speed + "km/h"
 
         weatherPic(data.weather[0].main)
 
@@ -41,8 +43,8 @@ function weatherPic(waeterName) {
         weatherImage.src = "./images/weather-icon-png-11067.png"
     } else if (waeterName == "Clear") {
         weatherImage.src = "./images/weather-icon-png-11101.png"
-    } else if(waeterName == "Rainy"){
-        weatherImage.src = "./images/weather-icon-png-11101.png"
+    } else if(waeterName == "Rain"){
+        weatherImage.src = "./images/cloud-rain-icons-11035.png"
     }
     else{
         weatherImage.src = "./images/weather-icon-png-11101.png"

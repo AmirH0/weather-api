@@ -104,3 +104,22 @@ body{
 .waether-inf .city{
     font-size: 2rem;
 }
+
+.waether-inf .wind{
+    font-size: 1.5rem;
+}
+
+.wind-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.wind-section div{
+    position: relative;
+    width: 3rem;
+}
+.wind-section div img{
+    width: 100%;
+}
